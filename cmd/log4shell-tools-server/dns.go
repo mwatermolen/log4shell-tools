@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/alexbakker/log4shell-tools/cmd/log4shell-tools-server/storage"
+	"github.com/mwatermolen/log4shell-tools/cmd/log4shell-tools-server/storage"
 	"github.com/google/uuid"
 	"github.com/miekg/dns"
 	log "github.com/sirupsen/logrus"

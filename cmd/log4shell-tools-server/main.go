@@ -13,7 +13,7 @@ import (
 	"time"
 
 	ldap "github.com/alexbakker/ldapserver"
-	"github.com/alexbakker/log4shell-tools/cmd/log4shell-tools-server/storage"
+	"github.com/mwatermolen/log4shell-tools/cmd/log4shell-tools-server/storage"
 	"github.com/google/uuid"
 	"github.com/julienschmidt/httprouter"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
