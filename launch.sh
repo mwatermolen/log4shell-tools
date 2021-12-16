@@ -1,0 +1,1 @@
+log4shell-tools-server -http-addr-external $HTTPADDREXT -ldap-addr-external $LDAPADDREXT

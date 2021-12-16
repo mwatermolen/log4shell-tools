@@ -1,4 +1,4 @@
-module github.com/alexbakker/log4shell-tools
+module github.com/mwatermolen/log4shell-tools
 
 go 1.16
 

@@ -106,18 +106,18 @@ func main() {
 	defer store.Close()
 	statsCache = &StatsCache{store: store}
 
-	go func() {
-		for {
-			<-time.After(1 * time.Minute)
+	// go func() {
+	// 	for {
+	// 		<-time.After(1 * time.Minute)
 
-			deleted, err := store.PruneTestResults(context.Background())
-			if err != nil {
-				log.WithError(err).Error("Unable to delete old test results")
-			} else {
-				log.WithField("count", deleted).Info("Deleted old test results")
-			}
-		}
-	}()
+	// 		// deleted, err := store.PruneTestResults(context.Background())
+	// 		// if err != nil {
+	// 		// 	log.WithError(err).Error("Unable to delete old test results")
+	// 		// } else {
+	// 		// 	log.WithField("count", deleted).Info("Deleted old test results")
+	// 		// }
+	// 	}
+	// }()
 
 	ldapServer := NewLDAPServer(store)
 	go func() {
