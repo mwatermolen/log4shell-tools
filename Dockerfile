@@ -2,7 +2,7 @@
 FROM golang:1.16-alpine
 
 WORKDIR /app
-
+COPY
 COPY launch.sh ./
 
 RUN go install github.com/mwatermolen/log4shell-tools/cmd/log4shell-tools-server@latest
